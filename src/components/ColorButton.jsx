@@ -13,7 +13,8 @@ export default function ColorButton() {
           width: "100px",
           height: "50px",
           marginTop: "30px",
-      }}/>
+      }}>
+      </button>
     </div>
   );
 };
