@@ -1,24 +1,24 @@
-import { useState } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import logo from "./logo.svg";
+import "./App.css";
+import ColorButton from "./components/ColorButton";
 
-export default function App({ prop1 }) {
+export default function App() {
   const [count, setCount] = useState(0);
-
   return (
-    <div className="App">
+    <div className="App" a="b">
       <header className="App-header">
-        {prop1}
         <img src={logo} className="App-logo" alt="logo" />
-        <p>Hello Vite + React!</p>
+        <p>Hello Vite + React! in branch</p>
         <p>
-          <button type="button" onClick={() => setCount((count) => count + 1)}>
+          <button type="button" onClick={() => setCount((c) => c + 1)}>
             count is: {count}
           </button>
         </p>
         <p>
           Edit <code>App.jsx</code> and save to test HMR updates.
         </p>
+        <ColorButton />
         <p>
           <a
             className="App-link"
@@ -41,4 +41,6 @@ export default function App({ prop1 }) {
       </header>
     </div>
   );
-}
+};
+
+
