@@ -1,7 +1,7 @@
 import { useState } from "react";
 import logo from "./logo.svg";
 import "./App.css";
-import ColorButton from "./components/ColorButton";
+import Fetch from "./components/Fetch";
 
 export default function App() {
   const [count, setCount] = useState(0);
@@ -18,7 +18,7 @@ export default function App() {
         <p>
           Edit <code>App.jsx</code> and save to test HMR updates.
         </p>
-        <ColorButton />
+        <Fetch/>
         <p>
           <a
             className="App-link"
