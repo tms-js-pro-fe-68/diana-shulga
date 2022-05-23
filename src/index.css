@@ -1,13 +1,60 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  justify-content: center;
+  margin: 20px auto;
+  padding: 30px 50px 50px 50px;
+  border: 5px solid white;
+  border-radius: 6px;
+}
+
+form label {
+  display: flex;
+  flex-direction: column;
+  font-size: 15px;
+  color: blueviolet;
+  padding: 10px 0px;
+}
+
+form label input,
+form label select {
+  padding: 10px 0px;
+  border: 2px solid white;
+  border-radius: 10px;
+  margin-top: 5px;
+  font-size: 20px;
+}
+
+form label select {
+  margin-bottom: 10px;
+}
+
+form button {
+  height: 30px;
+  border: 2px solid black;
+  border-radius: 12px;
+  margin: 20px 10px;
+  color: #FF1493;
+  font-size: 20px;
+  font-weight: 300;
+  background-color: whitesmoke;
+}
+
+form button:disabled {
+  opacity: 0.5;
 }
